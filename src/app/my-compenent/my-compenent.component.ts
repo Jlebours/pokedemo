@@ -1,3 +1,4 @@
+import { PokeShareInfoService } from './../poke-share-info.service';
 import { PokeAPIServiceService } from './../poke-apiservice.service';
 import { Pokemon, PokeDetail } from './../pokemon';
 import { Component, OnInit } from '@angular/core';
@@ -14,13 +15,14 @@ export class MyCompenentComponent implements OnInit {
   searchPokeName = '';
   providers!: [PokeAPIServiceService];
   pokeDetail!: PokeDetail;
+  myDate!: Date;
   parseInt = parseInt;
   // tslint:disable-next-line: typedef
   toString(x: number){
     x.toString();
   }
 
-  constructor(private pokeService: PokeAPIServiceService) {
+  constructor(private pokeService: PokeAPIServiceService, private pokeShareInfoService: PokeShareInfoService) {
 
   }
 
@@ -38,7 +40,10 @@ export class MyCompenentComponent implements OnInit {
     // tslint:disable-next-line: triple-equals
     if (this.selectedPokeId != ''){
       // tslint:disable-next-line: deprecation
-      this.pokeService.getPokemonInfo(this.selectedPokeId).subscribe(data => this.pokeDetail = data);
+      this.pokeService.getPokemonInfo(this.selectedPokeId).subscribe(data => {
+        this.pokeDetail = data;
+        this.pokeShareInfoService.setValue(this.selectedPokeId);
+      });
     }
   }
 

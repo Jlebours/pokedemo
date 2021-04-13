@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {CalendarModule} from 'primeng/calendar';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -18,6 +20,8 @@ import { PokedetailComponent } from './pokedetail/pokedetail.component';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
+    CalendarModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule
