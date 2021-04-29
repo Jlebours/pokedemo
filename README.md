@@ -1,27 +1,21 @@
-# Pokedemo
-
+# TP7 Report
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.6.
 
-## Development server
+## Clone git repository
+https://github.com/Jlebours/pokedemo
 
+## How to install
+Check the installation of nodejs using nvm (see guid install) http://olivier.barais.fr/blog/posts/teaching/istic/m2/french/2018/09/10/Operation_portable_M2_ISTIC.html
+
+## How to run
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+#About
+J'ai suivi les consignes du TP, il est entièrement réalisé.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+J'ai en plus réglé un petit problème que vous aviez dans le TP qui faisait que les sorts qui s'affichaient était ceux du pokémon suivant la sélection. 
 
-## Build
+Refresh la page si le JSON de PokeAPI est mal récupéré.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Student
+Johan LE BOURSICAUD
