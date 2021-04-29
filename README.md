@@ -10,7 +10,7 @@ Check the installation of nodejs using nvm (see guid install) http://olivier.bar
 ## How to run
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-#About
+## About
 J'ai suivi les consignes du TP, il est entièrement réalisé.
 
 J'ai en plus réglé un petit problème que vous aviez dans le TP qui faisait que les sorts qui s'affichaient était ceux du pokémon suivant la sélection. 
